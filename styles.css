@@ -1,0 +1,73 @@
+/* removing default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* css variables */
+:root {
+  --grey-light: #f1f5f9;
+  --grey: #64748b;
+  --grey-dark: #0f172a;
+  --fluid-width: 90vw;
+  --max-width: 992px;
+  --black: #222;
+  --white: #fff;
+  --letter-spacing: 2px;
+  --border-radius: 1rem;
+  --shadow-light: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --shadow-dark: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+body {
+  /* system fonts */
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  background: var(--grey-light);
+}
+.cards {
+  padding: 7rem 0;
+}
+
+.card-center {
+  /* width: var(--fluid-width); */
+  /* max-width: var(--max-width); */
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.card {
+  background: var(--white);
+  padding: 0.75rem;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow-light);
+}
+
+.card-img {
+  border-radius: var(--border-radius);
+  margin-bottom: 0.5rem;
+}
+
+.img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.card-content {
+  padding-bottom: 0.5rem;
+}
+
+.card-content h3 {
+  letter-spacing: var(--letter-spacing);
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.card-content p {
+  color: var(--grey);
+  text-align: center;
+  margin-top: 0.5rem;
+}
